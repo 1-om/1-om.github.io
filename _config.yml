@@ -108,4 +108,4 @@ theme_config:
 deploy:
   type: git
   repo: https://github.com/1-om/1-om.github.io.git
-  branch: main
+  branch: gh-pages
