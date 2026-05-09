@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="IntroductionThis article is being written in 2022, more than a decade later than invention of bitcoin.  In 2013, I spent a few months studying the technology behind bitcoin, just a couple years after">
+<meta property="og:type" content="article">
+<meta property="og:title" content="a survey of blockchain-based technologies">
+<meta property="og:url" content="https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/index.html">
+<meta property="og:site_name" content="yabb">
+<meta property="og:description" content="IntroductionThis article is being written in 2022, more than a decade later than invention of bitcoin.  In 2013, I spent a few months studying the technology behind bitcoin, just a couple years after">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-06-16T22:11:15.000Z">
+<meta property="article:modified_time" content="2026-05-09T23:00:16.308Z">
+<meta property="article:author" content="0x1om">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>a survey of blockchain-based technologies</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+      <link rel="alternate" href="/atom.xml" title="yabb" type="application/atom+xml" />
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/1-om">Projects</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2022/07/08/token-associations/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&text=a survey of blockchain-based technologies"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&title=a survey of blockchain-based technologies"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&is_video=false&description=a survey of blockchain-based technologies"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=a survey of blockchain-based technologies&body=Check out this article: https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&title=a survey of blockchain-based technologies"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&title=a survey of blockchain-based technologies"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&title=a survey of blockchain-based technologies"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&title=a survey of blockchain-based technologies"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&name=a survey of blockchain-based technologies&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&t=a survey of blockchain-based technologies"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Distributed-Ledgers-of-what"><span class="toc-number">1.1.</span> <span class="toc-text">Distributed Ledgers of what?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Is-blockchain-a-data-structure"><span class="toc-number">1.2.</span> <span class="toc-text">Is blockchain a data structure?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Properties-of-a-distributed-ledger"><span class="toc-number">1.3.</span> <span class="toc-text">Properties of a distributed ledger</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Life-of-a-blockchain"><span class="toc-number">1.4.</span> <span class="toc-text">Life of a blockchain</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        a survey of blockchain-based technologies
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">0x1om</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2022-06-16T22:11:15.000Z" itemprop="datePublished">2022-06-16</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>This article is being written in 2022, more than a decade later than invention of bitcoin.  In 2013, I spent a few months studying the technology behind bitcoin, just a couple years after graduating as a bachelor of engineering in computer science. Since then I have been working in the domain &amp; here are a few things I learnt, that are not yet published.</p>
+<h2 id="Distributed-Ledgers-of-what"><a href="#Distributed-Ledgers-of-what" class="headerlink" title="Distributed Ledgers of what?"></a>Distributed Ledgers of what?</h2><p>A timestamping technique was invented by Haber and Stornetta in 1994.<br>Satoshi Nakamoto used it to create a p2p timestamp of transactions.</p>
+<p>Blockchain is a collection of blocks of data, each of which contains a hash of the previous block, and block of data. <em>If the data in the blocks are not transactions, they are still chained blocks &amp; this information structure of this data is still a “blockchain”</em>. This is important because in case of ethereum, the data is the state of the ethereum virtual machine.</p>
+<p><strong>Blockchains are generic ledgers</strong>, bitcoin &amp; ethereum etc. are specific ledgers.</p>
+<h2 id="Is-blockchain-a-data-structure"><a href="#Is-blockchain-a-data-structure" class="headerlink" title="Is blockchain a data structure?"></a>Is blockchain a data structure?</h2><p>The data structure, where every node contains the hash of the previous node, may be considered a blockchain?<br>It must be noted that traditionally in data structures, we would use “node” to refer to a <em>location in computer’s memory</em>, but in case of blockchains, a node is a <em>location in the network’s memory</em> &amp; that node uses any <em>data structure</em> to hold this information structure, ing away information from the data.</p>
+<p><strong>Blockchains are information structures</strong>, not data structures.</p>
+<h2 id="Properties-of-a-distributed-ledger"><a href="#Properties-of-a-distributed-ledger" class="headerlink" title="Properties of a distributed ledger"></a>Properties of a distributed ledger</h2><p>As far as software used by the users of this technique is concerned, </p>
+<ol>
+<li><p>it is a p2p exchange of <em>data</em>. The discrete files of this data are called <em>blocks</em>. All participants replicate the construction of continous stream of <strong>information</strong> by orderering these blocks(using various algorithms)&amp; this ordering &amp; replication makes the information immutable(subject to conditions<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>).</p>
+</li>
+<li><p>This exchange of data in the blocks is over a network of peers. This networking is done by each end-point for the <em>purpose of participation in securing the immutability</em> of the stream of information and not for the <em>purpose of production</em>, which is the default.</p>
+</li>
+<li><p>It is a data structure that secures its’ purpose<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>.</p>
+</li>
+</ol>
+<h2 id="Life-of-a-blockchain"><a href="#Life-of-a-blockchain" class="headerlink" title="Life of a blockchain"></a>Life of a blockchain</h2><p>Last bitcoin will be mined around 2140.<br>The life of a blockchain is the life of the network of nodes, but not the life of the data in the blocks. The data in the blocks is an immutable record of the transactions that were made in the network. Dead ledgers are frozen in time records of activity.</p>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style:none; padding-left: 0;"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">1.</span><span style="display: inline-block; vertical-align: top;">Immutability has a degree of trust or a probability of failure, depending on the algorithm used.</span><a href="#fnref:1" rev="footnote"> ↩</a></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px;">2.</span><span style="display: inline-block; vertical-align: top;">This <em>security</em> is not data security which is the property of drive system(database), neither is this proof-of-work which secures structure of data; it is about the meaning of data. Bitcoin might say this data is transaction of bitcoin units, while ethereum might say this data is transaction of smart contract state changes caused by transaction of ethereum units.</span><a href="#fnref:2" rev="footnote"> ↩</a></li></ol></div></div>
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a target="_blank" rel="noopener" href="http://github.com/1-om">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Introduction"><span class="toc-number">1.</span> <span class="toc-text">Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Distributed-Ledgers-of-what"><span class="toc-number">1.1.</span> <span class="toc-text">Distributed Ledgers of what?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Is-blockchain-a-data-structure"><span class="toc-number">1.2.</span> <span class="toc-text">Is blockchain a data structure?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Properties-of-a-distributed-ledger"><span class="toc-number">1.3.</span> <span class="toc-text">Properties of a distributed ledger</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Life-of-a-blockchain"><span class="toc-number">1.4.</span> <span class="toc-text">Life of a blockchain</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&text=a survey of blockchain-based technologies"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&title=a survey of blockchain-based technologies"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&is_video=false&description=a survey of blockchain-based technologies"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=a survey of blockchain-based technologies&body=Check out this article: https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&title=a survey of blockchain-based technologies"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&title=a survey of blockchain-based technologies"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&title=a survey of blockchain-based technologies"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&title=a survey of blockchain-based technologies"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&name=a survey of blockchain-based technologies&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://1-om.github.io/2022/06/16/a-survey-of-blockchain-based-technologies/&t=a survey of blockchain-based technologies"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2022-2026
+    0x1om
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a target="_blank" rel="noopener" href="http://github.com/1-om">Projects</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
